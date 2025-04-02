@@ -1,0 +1,19 @@
+.pageSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.bgLogo {
+  position: absolute;
+  z-index: -1;
+}
+
+.textParagraph {
+  width: 70%;
+  margin: 20px 0;
+}

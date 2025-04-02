@@ -1,0 +1,39 @@
+/* Desktop */
+
+.footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.footerVisible {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  width: 85vw;
+  height: 100%;
+  max-width: 1600px;
+}
+
+.compName {
+  text-decoration: none;
+}
+
+.footerTextBox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerText {
+  width: fit-content;
+}

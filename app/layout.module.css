@@ -1,0 +1,8 @@
+.pageLayout {
+    width: 85vw;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: fit-content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
