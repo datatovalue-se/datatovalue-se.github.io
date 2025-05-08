@@ -1,4 +1,6 @@
-import '@fontsource/poppins'
+import '@fontsource/poppins/400.css'; // Regular
+import '@fontsource/poppins/600.css'; // Semi-Bold
+
 
 const getDesignTokens = () => ({
   palette: {
@@ -15,7 +17,7 @@ const getDesignTokens = () => ({
       background: 'var(--primaryColor)',
     },
     footer: {
-      background: '#fff',
+      background: '#F8F9FA',
     },
   },
 
@@ -91,6 +93,17 @@ const getDesignTokens = () => ({
 
     // h7
     h7: {
+      fontSize: '.8rem', // default size for mobile
+      '@media (min-width: 600px)': {
+        fontSize: '1rem', // tablets and larger
+      },
+      '@media (min-width: 960px)': {
+        fontSize: '1.2rem', // desktops and larger
+      },
+    },
+
+    // p
+    p: {
       fontSize: '.8rem', // default size for mobile
       '@media (min-width: 600px)': {
         fontSize: '1rem', // tablets and larger

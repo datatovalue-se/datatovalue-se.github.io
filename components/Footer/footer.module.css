@@ -1,69 +1,67 @@
 /* Desktop */
 
-.footer {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 300px;
+
+
+.fullpageSection {
+  min-height: calc(100vh - 100px);
+  height: fit-content;
+  width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: flex-start;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 8vh 8vw;
+  gap: 30px;
 }
 
-.footerVisible {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  gap: 25px;
-  padding: 0 8vw;
-}
+
 
 .compName {
   text-decoration: none;
 }
 
-.footerTextBox {
+.footerTextBox,
+.footerBottom {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 50px;
-
+  gap: 30px;
+  position: relative;
+  margin: auto;
 }
 
+.footerBottom {
+  align-items: flex-start;
+  gap: 0;
+}
 
 
 .footerSubBox {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-width: 200px;
+  text-align: start;
+  z-index: 99;
 }
 
 
+.link {
+  color: black;
+}
 
-
-.footerRight {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: flex-end;
+.footerCopyright {
+  margin-top: 20px !important;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .footerTextBox {
-    flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
 
 
-  .footerSubBox {
-    min-width: 0;
-    width: 100%;
-  }
 
 }

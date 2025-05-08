@@ -57,9 +57,7 @@ export default function Home() {
 
           <Reveal>
             <Typography className={styles.comingSoonTextUpper} variant='h5'>
-              <b>
                 Join Us in Shaping the Future of Information Support
-              </b>
             </Typography>
           </Reveal>
 
@@ -70,9 +68,6 @@ export default function Home() {
                 We're pioneering the next generation of support structures - systems that effectively
                  <b> organize information and knowledge</b>, transforming validated data into <b>actionable insights</b> and
                 <b> real value</b>. 
-                <br/>
-                <br/>
-
                 We invite visionary partners to explore <b>pilot collaborations</b> that redefine
                 how data can be structured and applied. By combining <b>new methodologies</b>, innovative 
                 <b> ways of working</b>, and <b>AI-powered digital support structures</b>, we aim to enable:

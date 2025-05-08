@@ -41,6 +41,10 @@ body {
   text-transform: uppercase;
 }
 
+.accentHeading2{
+  font-weight: bold;
+}
+
 a {
   color: var(--secondaryColorOriginal);
 }
