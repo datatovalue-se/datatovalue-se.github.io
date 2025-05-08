@@ -12,10 +12,10 @@ const getDesignTokens = () => ({
       default: '#fff', // global background color
     },
     navbar: {
-      background: 'transparent',
+      background: 'var(--primaryColor)',
     },
     footer: {
-      background: '#F5F5F5',
+      background: '#fff',
     },
   },
 
@@ -47,6 +47,7 @@ const getDesignTokens = () => ({
     // h3
     h3: {
       fontSize: '1.5rem', // default size for mobile
+      lineHeight: '1.5',
       '@media (min-width: 600px)': {
         fontSize: '2rem', // tablets and larger
       },
@@ -87,6 +88,17 @@ const getDesignTokens = () => ({
         fontSize: '1.5rem', // desktops and larger
       },
     },
+
+    // h7
+    h7: {
+      fontSize: '.8rem', // default size for mobile
+      '@media (min-width: 600px)': {
+        fontSize: '1rem', // tablets and larger
+      },
+      '@media (min-width: 960px)': {
+        fontSize: '1.2rem', // desktops and larger
+      },
+    },
   },
   components: {
     MuiButton: {
@@ -102,10 +114,19 @@ const getDesignTokens = () => ({
         {
           props: { variant: 'primary' },
           style: {
-            backgroundColor: 'pink',
+            backgroundColor: 'var(--secondaryColorOriginal)',
             color: 'white',
+            minWidth: '250px',
+            fontSize: '.8rem', // default size for mobile
+            '@media (min-width: 600px)': {
+              fontSize: '1rem', // tablets and larger
+            },
+            '@media (min-width: 960px)': {
+              fontSize: '1.2rem', // desktops and larger
+            },
+
             '&:hover': {
-              backgroundColor: 'green',
+              backgroundColor: 'var(--secondaryHoverColor)',
             },
           },
         },

@@ -18,19 +18,36 @@ const Footer = () => {
       }}
     >
       <Box className={styles.footerVisible}>
-        <Link href={'./'} className={styles.compName}>
-          <Image
-            src='/logo1.svg'
-            height={60}
-            width={110}
-            alt='logotype datatovalue'
-          />
-        </Link>
         <Box className={styles.footerTextBox}>
-          <Typography variant='h6' className={styles.footerText}>
-            We support the welfare sector in developing fact based high quality
-            and cost effective services <br />- from data to value
-          </Typography>
+          <Box className={styles.footerSubBox}>
+            <Typography variant='h7' className={'accentHeading'}>
+              <b>Mission</b>
+            </Typography>
+            <Typography variant='p' >
+              We support the welfare sector in developing fact based high
+              quality and cost effective services - from data to value
+            </Typography>
+          </Box>
+
+          <Box className={styles.footerRight}>
+            <Box className={styles.footerSubBox}>
+              <Typography variant='h7' className={'accentHeading'}>
+               <b>Contact</b> 
+              </Typography>
+              <Typography variant='p' >
+                <a href='mailto:info@d2v.se'>info@d2v.se</a>
+              </Typography>
+            </Box>
+
+            <Box className={styles.footerSubBox}>
+              <Typography variant='h7' className={'accentHeading'}>
+                <b>Follow us</b>
+              </Typography>
+              <Typography variant='p' >
+                <a href='https://www.linkedin.com/company/data2value/'>Linkedin</a>
+              </Typography>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>

@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion'
 
 const Reveal = ({ children, width = '100%', height = '100%' }) => {
-  const ref = useRef(null, { triggerOnce: true })
+  const ref = useRef(null, { triggerOnce: true }) //false om den ska triggas varje gång
   const isInView = useInView(ref)
   const mainControls = useAnimation()
 
@@ -19,7 +19,6 @@ const Reveal = ({ children, width = '100%', height = '100%' }) => {
   return (
     <div
       ref={ref}
-      // style={{ position: 'relative', width, height, overflow: 'hidden' }}
     >
       <motion.div
         variants={{

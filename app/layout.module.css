@@ -1,8 +1,15 @@
 .pageLayout {
-    width: 85vw;
-    max-width: 1600px;
     margin: 0 auto;
+    width: 100vw;
     height: fit-content;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+
+@media (max-width: 600px) {
+    .pageLayout {
+      width: 100vw;
+      margin: 0 auto;
+    }
 }

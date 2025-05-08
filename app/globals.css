@@ -1,7 +1,25 @@
 :root {
-  --customGreen: #87D293;
-  --customOrange: #EFAA70;
-  --customBlue: #37709E;
+--processColor: #87D294;
+--documentColor: #36709E;
+--indicatorColor: #EFAA70;
+--systemAndDataColor: #ECC82F;
+--nonFunctionalColor: #ED7485;
+
+
+--primaryTextColor: #182A4E;
+--textSofterColor: #44546F; /*brödtext samt för sidebars*/
+
+--secondaryColor: #95acff;
+--secondaryColorOriginal: #4C6ADB;
+
+--secondaryHoverColor: #6985ea;
+
+--accentColorLightBlue: #E9F2FF;
+--accentColorLightGrey: #F6F7F8; /*ex background color in components etc*/
+--accentColorBlue: #4BADE8;
+--primaryColor: #0f1e3c; /* ex button background color active */
+--updatedText: #005BEE;
+
 }
 
 html,
@@ -14,4 +32,15 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+
+/* h7 typography */
+.accentHeading {
+  color: var(--nonFunctionalColor);
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--secondaryColorOriginal);
 }
