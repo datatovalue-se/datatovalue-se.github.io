@@ -29,8 +29,8 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This repo is currently deployed using Github Pages, and is reachable through [Datatovalue's site](https://datatovalue.se). The code used lies in the branch `gh-pages`, and is automatically pushed to when running the command `npm run deploy` locally. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+That is, to deploy the site to [datatovalue.se](https://datatovalue.se), run the command `npm run deploy` locally.
